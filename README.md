@@ -11,7 +11,7 @@ I recommend sometinhg like [msee](https://www.npmjs.com/package/msee) if you lik
 
 Then clone them to a place where you can find them
 
-    clone 
+    git clone https://github.com/fabianmoronzirfas/cheatsets.git ~/bin/Cheatsets/
 
 Watch them in your shell or just open them with your favorite markdown viewer.  
 
