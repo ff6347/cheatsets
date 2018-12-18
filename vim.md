@@ -8,3 +8,9 @@
 | Format JSON                | :%!python -m json.tool |
 | Move one page down         | `^f`                   |
 | Move one page up           | `^b`                   |
+
+## Search and Replace
+| Action                     | Command                |
+| :--                        | :--                    |
+|Change each 'foo' to 'bar' in all the lines.|:%s/foo/bar/g|
+|Change each 'foo' to 'bar' in the current line.|:s/foo/bar/g|
