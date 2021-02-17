@@ -25,3 +25,4 @@
 | Set the syntax highlighting | `:set filetype=xml` |
 | Set word wrap               | `:set wrap`         |
 | Unset word wrap             | `:set nowrap`       |
+| toggle word wrap            | `:set wrap!`        |
