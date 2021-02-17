@@ -1,3 +1,4 @@
+.vscode/**
 # MAC OSX
 .DS_Store
 # WIN
@@ -38,4 +39,3 @@ Adobe\ After\ Effects\ Auto-Speichern
 
 # Particle Photon
 *.bin
-
