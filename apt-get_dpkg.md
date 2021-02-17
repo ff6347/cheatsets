@@ -1,6 +1,6 @@
 # apt-get
 
-## Upgrade ##
+## Upgrade
 
 
 | Command                                 | Result                   |
@@ -10,7 +10,7 @@
 |                                         |                          |
 
 
-# dpkg
+## dpkg
 
 | Command                  | Result                     |
 | :--                      | :--                        |
