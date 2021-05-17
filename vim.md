@@ -5,9 +5,12 @@
 | Action                     | Command                  |
 | -------------------------- | ------------------------ |
 | Move to end of line        | `$`                      |
+| Move to start of line      | `^` or `0`               |
 | Move to end of line & edit | `A`                      |
 | Move to end of file        | `G`                      |
-| Format JSON                | `:%!python -m json.too`l |
+| Move one word forward      | `w`                      |
+| Move one word backward     | `b`                      |
+| Format JSON                | `:%!python -m json.tool` |
 | Move one page down         | `^f`                     |
 | Move one page up           | `^b`                     |
 
