@@ -8,6 +8,7 @@
 | Move to start of line      | `^` or `0`               |
 | Move to end of line & edit | `A`                      |
 | Move to end of file        | `G`                      |
+| Move to start of file      | `gg`                     |
 | Move one word forward      | `w`                      |
 | Move one word backward     | `b`                      |
 | Format JSON                | `:%!python -m json.tool` |
