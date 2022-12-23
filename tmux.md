@@ -21,7 +21,7 @@ Original mapping is to ^ + b but I changed that
 | tmux attach -t NUMBER                 | attach to session with number |
 | tmux rename-session -t NUMBER newname | rename a session              |
 | ^ + SPACE ?                           | tmux help                     |
-| ^ + SPACE [                           | enter copy mode               |
+|` ^ + SPACE [ `                          | enter copy mode               |
 | ---                                   | scolling around and working   |
 | ---                                   | with stdout                   |
 
