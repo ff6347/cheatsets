@@ -1,11 +1,38 @@
-# Vim
+# Vim / Neovim
 
 ## General
 
 | Command               | Action                                                                            |
-| :-------------------- | :-------------------------------------------------------------------------------- |
+|:--------------------- |:--------------------------------------------------------------------------------- |
 | `:h<topic>`           | opens the help                                                                    |
 | `:stop` or `:suspend` | suspend Vim while in the middle of editing, return to the suspended Vim, run `fg` |
+
+## Clipboard
+
+|Command|Action|
+|:--|:--|
+|`"*p`|Paste from system clipboard|
+|`"*y`|Yank to system clipboard|
+
+## Undo Redo
+
+| Command  | Action |
+| :------- | :----- |
+| `u`      | undo   |
+| `CTRL-r` | redo   |
+
+## Insert Mode
+
+get into insert mode `i`
+
+| Command                   | Action                                                                |
+| :------------------------ | :-------------------------------------------------------------------- |
+| `i`                       | `i`nsert content before current character                             |
+| `a`                       | insert content `a`fter the current character                          |
+| `A`                       | insert content `A`fter everything. Move cursor to the end of the line |
+| `o`                       | open a new line below the current and start insert                    |
+| `O`                       | open a new line above the current and start insert                    |
+| `esc`, `CTRL-c`, `CTRL-[` | back to normal mode if in insert mode                                 |
 
 ## Movement
 
@@ -27,6 +54,68 @@
 | `l`        | right                                              |
 | `%`        | move to matching bracket if you are on one already |
 
+
+## Character Manipulation
+
+### Change Case
+
+| Command | Action                   |
+|:------- |:------------------------ |
+| `~`     | Change case unser cursor |
+| guw  | Change to end of current WORD from upper to lower.|
+| guaw | Change all of current WORD to lower.|
+| gUw  | Change to end of current WORD from lower to upper.|
+| gUaw | Change all of current WORD to upper.|
+| g~~  | Invert case to entire line|
+| g~w  | Invert case to current WORD|
+| guG  | Change to lowercase until the end of document.|
+| gU)  | Change until end of sentence to upper case|
+| gu}  | Change to end of paragraph to lower case|
+| gU5j | Change 5 lines below to upper case|
+| gu3k | Change 3 lines above to lower case|
+
+## Vim Grammar
+
+Text objects are used with operators. There are two types of text objects: inner and outer text objects.
+
+```plain
+i + object    Inner text object
+a + object    Outer text object
+```
+
+|Command|Action|
+|:--|:--|
+|inner and outer objets||
+|`di(`| delete all content within (). Deletes from ("Hello world") <- "Hello world"|
+|`da(`|delete all content with (). Deltes from ("Hello world") <- ("Hello world")|
+|`daw`|delete the word under the cursor|
+
+Below is a list of common objects
+
+```plain
+w         A word
+p         A paragraph
+s         A sentence
+( or )    A pair of ( )
+{ or }    A pair of { }
+[ or ]    A pair of [ ]
+< or >    A pair of < >
+t         XML tags e.g. HTML
+"         A pair of " "
+'         A Pair of ' '
+`         A pair of ` `
+```
+
+
+## Settings
+
+| Command             | Action                      |
+| ------------------- | --------------------------- |
+| `:set filetype=xml` | Set the syntax highlighting |
+| `:set wrap`         | Set word wrap               |
+| `:set nowrap`       | Unset word wrap             |
+| `:set wrap!`        | toggle word wrap            |
+
 ## Search and Replace
 
 | Command         | Action                                          |
@@ -38,26 +127,6 @@
 | `N`             | move after search backward                      |
 | `*`             | search word under the cursor forward            |
 | `#`             | search word under the cursor backward           |
-
-## Undo Redo
-
-| Command  | Action |
-| :------- | :----- |
-| `u`      | undo   |
-| `CTRL-r` | redo   |
-
-## Insert Mode
-
-get into insert mode `i`
-
-| Command                   | Action                                                                |
-| :------------------------ | :-------------------------------------------------------------------- |
-| `i`                       | `i`nsert content before current character                             |
-| `a`                       | insert content `a`fter the current character                          |
-| `A`                       | insert content `A`fter everything. Move cursor to the end of the line |
-| `o`                       | open a new line below the current and start insert                    |
-| `O`                       | open a new line above the current and start insert                    |
-| `esc`, `CTRL-c`, `CTRL-[` | back to normal mode if in insert mode                                 |
 
 ## Buffers, Tabs and Windows
 
@@ -101,14 +170,49 @@ get into insert mode `i`
 | `gt`               | Move to next tab           |
 | `gT`               | Move to previous tab       |
 
-## Settings
+## Frameworks
 
-| Command             | Action                      |
-| ------------------- | --------------------------- |
-| `:set filetype=xml` | Set the syntax highlighting |
-| `:set wrap`         | Set word wrap               |
-| `:set nowrap`       | Unset word wrap             |
-| `:set wrap!`        | toggle word wrap            |
+There is LunarVim for Neovim which seems to be marvelous
+[lunarvim](lunarvim.md)
+
+
+
+
+## Plugins
+
+### fzf vim plugin
+
+| Command | Action               |
+| :------ | :------------------- |
+| `Files` | Find files usinf fzf |
+
+
+### EasyMotion
+
+https://github.com/easymotion/vim-easymotion
+
+|Command|Action|
+|:--|:--|
+|`<leader><leader>w`|Enable easy motion to all words|
+|`<leader><leader>ft`|Enable easy motion to all occurrences of character t|
+
+
+### Prettier 
+
+https://github.com/prettier/vim-prettier
+
+|Command|Action|
+|:--|:--|
+|`<leader>p`|Format|
+
+
+### tComment
+
+| Command     | Action                                 |
+| :---------- | :------------------------------------- |
+| `<leader>/` | Comment uncomment with tComment plugin |
+
+
 
 ## misc
 
@@ -128,11 +232,6 @@ get into insert mode `i`
 | `:Sexplore`      | No kidding. Starts netrw on split top half of the screen          |
 | `:Vexplore`      | Starts netrw on split left half of the screen                     |
 
-### fzf vim plugin
-
-| Command | Action               |
-| :------ | :------------------- |
-| `Files` | Find files usinf fzf |
 
 ### netrw (the default file explroer)
 
@@ -152,11 +251,6 @@ get into insert mode `i`
 |         |                              |
 |         |                              |
 
-## own keymaps
-
-| Command     | Action                                 |
-| :---------- | :------------------------------------- |
-| `<leader>/` | Comment uncomment with tComment plugin |
 
 ---
 
