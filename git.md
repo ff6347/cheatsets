@@ -14,3 +14,11 @@
 | Command                   | Action               |
 |:------------------------- |:-------------------- |
 | ` git diff staging..HEAD` | Compare two branches |
+
+## log
+
+|Command| Action|
+|:--|:--|
+|`git log --pretty=format:"- %s %h" staging...main \| sort`| Logs all commit subjects and hashes between staging and main branch|
+
+https://git-scm.com/docs/pretty-formats
