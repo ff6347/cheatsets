@@ -34,6 +34,13 @@ get into insert mode `i`
 | `O`                       | open a new line above the current and start insert                    |
 | `esc`, `CTRL-c`, `CTRL-[` | back to normal mode if in insert mode                                 |
 
+## Visual Mode
+
+| Command           | Action          |
+|:----------------- |:--------------- |
+| `v` plus movement | Select visually |
+| `V`                  |                 linewise selection|
+
 ## Movement
 
 | Command    | Action                                             |
@@ -55,6 +62,31 @@ get into insert mode `i`
 | `%`        | move to matching bracket if you are on one already |
 
 
+## Exit Vim
+
+It is already a meme how to exit vim
+
+| Command      | Action              |
+|:------------ |:------------------- |
+| `:q`         | Exit                |
+| `:wq`        | Save and Exit       |
+| `SHIFT + ZZ` | Save and Exit       |
+|`:qa`|Quita all without saving|
+| `SHIFT + ZQ` | Exit without saving |
+
+
+## Focus Line
+
+| Command     | Action                                                           |
+|:----------- |:---------------------------------------------------------------- |
+| `zz`          | center screen on current line                                    |
+| `zt`          | bring current line to top                                        |
+| `zb`          | bring current line to bottom                                     |
+| `z.`          | center line and set cursor to beginning                          |
+| `z + ENTER` | bring line to top and set cursor to the beginning                |
+| `z-`          | bring current line to the bottom and set cursor to the beginning |
+|             |                                                                  |
+
 ## Character Manipulation
 
 ### Change Case
@@ -62,17 +94,24 @@ get into insert mode `i`
 | Command | Action                   |
 |:------- |:------------------------ |
 | `~`     | Change case unser cursor |
-| guw  | Change to end of current WORD from upper to lower.|
-| guaw | Change all of current WORD to lower.|
-| gUw  | Change to end of current WORD from lower to upper.|
-| gUaw | Change all of current WORD to upper.|
-| g~~  | Invert case to entire line|
-| g~w  | Invert case to current WORD|
-| guG  | Change to lowercase until the end of document.|
-| gU)  | Change until end of sentence to upper case|
-| gu}  | Change to end of paragraph to lower case|
-| gU5j | Change 5 lines below to upper case|
-| gu3k | Change 3 lines above to lower case|
+| `guw`  | Change to end of current WORD from upper to lower.|
+| `guaw` | Change all of current WORD to lower.|
+| `gUw`  | Change to end of current WORD from lower to upper.|
+| `gUaw` | Change all of current WORD to upper.|
+| `g~~`  | Invert case to entire line|
+| `g~w`  | Invert case to current WORD|
+| `guG`  | Change to lowercase until the end of document.|
+| `gU)`  | Change until end of sentence to upper case|
+| `gu}`  | Change to end of paragraph to lower case|
+| `gU5j` | Change 5 lines below to upper case|
+| `gu3k` | Change 3 lines above to lower case|
+
+### Souround  with (no plugin)
+
+|Command|Action|
+|:--|:--|
+|`ciw '' Esc P`| Sourround with single quotes by cutting the word, adding quotes and pasting inside|
+
 
 ## Vim Grammar
 
@@ -107,6 +146,17 @@ t         XML tags e.g. HTML
 ```
 
 
+|Command|Action|
+|:--|:--|
+|`c` |   Delete text, save to register, and start insert mode|
+
+|Command|Action|
+|:--|:--|
+|`r`|(replace) never enters insert mode at all. Instead, it expects another character, which it will then use to replace the character currently under the cursor.|
+|`c`|(change) takes a vi/vim motion (such as w, j, b, etc.). It deletes the characters from the current cursor position up to the end of the movement. Note that this means that s is equivalent to cl (vim documentation itself claims these are synonyms).|
+|`cwsomething<ESC>`|Change the word under the cursor to `something` and leave insert mode|
+
+
 ## Settings
 
 | Command             | Action                      |
@@ -127,6 +177,15 @@ t         XML tags e.g. HTML
 | `N`             | move after search backward                      |
 | `*`             | search word under the cursor forward            |
 | `#`             | search word under the cursor backward           |
+
+
+## Replace all of current word under cursor
+
+|Command|Action|
+|:--|:--|
+|`*` and then `:%s//new name/`| If you don't specify a pattern, the substitute command uses the last searched one. |
+
+
 
 ## Buffers, Tabs and Windows
 
