@@ -1,9 +1,8 @@
-Cheatsets  
-=========
+# Cheatsets
 
-A collection of cheatsets I like to keep on my desktop. These are commands I use on a not daily basis. To not have to browse through my shell history over and over again, I worte them down.  
+A collection of cheatsets I like to keep on my desktop. These are commands I use on a not daily basis. To not have to browse through my shell history over and over again, I worte them down.
 
-## Usage ##
+## Usage
 
 I recommend sometinhg like [msee](https://www.npmjs.com/package/msee) if you like to see them in your shell.
 
@@ -13,11 +12,11 @@ Then clone them to a place where you can find them
 
     git clone https://github.com/fabianmoronzirfas/cheatsets.git ~/bin/Cheatsets/
 
-Watch them in your shell or just open them with your favorite markdown viewer.  
+Watch them in your shell or just open them with your favorite markdown viewer.
 
-    msee ~/bin/Cheatsets/git.md  
+    msee ~/bin/Cheatsets/git.md
 
-## License ##
+## License
 
 Copyright 2017 (c) Fabian Morón Zirfas
 

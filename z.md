@@ -1,4 +1,3 @@
-
 # z (zoxide)
 
 | Command     | Result                                               |

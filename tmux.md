@@ -2,7 +2,6 @@
 
 Original mapping is to ^ + b but I changed that
 
-
 | Command                               | Result                        |
 | :------------------------------------ | :---------------------------- |
 | tmux new -s SESSIONNAME               | creates a new session         |
@@ -21,12 +20,9 @@ Original mapping is to ^ + b but I changed that
 | tmux attach -t NUMBER                 | attach to session with number |
 | tmux rename-session -t NUMBER newname | rename a session              |
 | ^ + SPACE ?                           | tmux help                     |
-|` ^ + SPACE [ `                          | enter copy mode               |
+| `^ + SPACE [`                         | enter copy mode               |
 | ---                                   | scolling around and working   |
 | ---                                   | with stdout                   |
-
-
-
 
     CTRL-b-c create new full-sized window (and start a shell)
     CTRL-b-n switch to next full-sized window
@@ -39,13 +35,10 @@ Original mapping is to ^ + b but I changed that
     CTRL-b-& kill current window (as well as shell running in it)
     CTRL-b-d detach tmux
 
-
-
-Some guides:  
+Some guides:
 
 - [A quick and easy guide by hamvocke.com][hamvocke]
 - [tmux cheatsheet][gist1]
-
 
 [hamvocke]: http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
 [gist1]: https://gist.github.com/MohamedAlaa/2961058

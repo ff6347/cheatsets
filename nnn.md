@@ -1,6 +1,5 @@
-
-|      Key       |           Function          |
-|----------------|-----------------------------|
+| Key            | Function                    |
+| -------------- | --------------------------- |
 | ↑, k, ^P       | Previous entry              |
 | ↓, j, ^N       | Next entry                  |
 | PgUp, ^U       | Scroll half page up         |

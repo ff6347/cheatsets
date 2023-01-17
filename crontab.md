@@ -1,4 +1,5 @@
 ## Notation
+
 ```plain
     # *   *   *   *   *        command to be executed
     # -   -   -   -   -
@@ -9,6 +10,7 @@
     # |   +----------- hour (0 - 23)
     # +------------- min (0 - 59)
 ```
+
 ## cronic
 
 The cure for cron mailing you everything
@@ -29,9 +31,8 @@ Alterantive to cronic is chronic which allows to silence the mails even if there
 * * * * * chronic script
 ```
 
-
 ## Mail Report
 
 | Command                | Result                | Comment                   |
-| :-                     | :--                   | :--                       |
+| :--------------------- | :-------------------- | :------------------------ |
 | `MAILTO="bah@foo.com"` | send mail with stdout | is valid for all ff lines |

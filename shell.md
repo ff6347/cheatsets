@@ -1,7 +1,7 @@
 # Shell
 
 | command   | outcome                                        |
-| :--       | :--                                            |
+| :-------- | :--------------------------------------------- |
 | ^ + z     | send current job into backgronud and _suspend_ |
 | jobs -l   | list current jobs for current session          |
 | bg        | start latest background process in background  |
