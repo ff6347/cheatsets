@@ -1,6 +1,6 @@
 # Vim / Neovim
 
-## General
+## #General
 
 | Command               | Action                                                                            |
 | :-------------------- | :-------------------------------------------------------------------------------- |
@@ -167,9 +167,12 @@ t         XML tags e.g. HTML
 
 ## Search and Replace
 
+Beware. If you want to use capturing groups you need to escape the parenthesis like this`\(\)` also the result of the matching group can be accessed using `\1` (not `$1` what you might be used to from regular expressions).
+
 | Command         | Action                                          |
 | --------------- | ----------------------------------------------- |
 | `:%s/foo/bar/g` | Change each 'foo' to 'bar' in all the lines.    |
+| `:%s/\(foo\)/\1bar/g`  | Change each 'foo' to 'foobar' in all line using matching groups. |
 | `:s/foo/bar/g`  | Change each 'foo' to 'bar' in the current line. |
 | `/`             | search                                          |
 | `n`             | move after search forward                       |
