@@ -14,3 +14,9 @@
 | `mix test`          | Run all tests                                                            |
 | `mix test --cover`  | Run all tests with coverage support                                      |
 | `mix docs`          | Generate docs from comments                                              |
+
+### Tests
+
+To watch tests install https://github.com/lpil/mix-test.watch
+
+and run `mix test.watch`
