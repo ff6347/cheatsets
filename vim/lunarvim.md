@@ -35,10 +35,10 @@ Works also with HTML tags `t` or back ticks
 
 ### ToggleTerm
 
-|Command| Action|
-|:--|:--|
-|`:ToggleTerm dir=~/Desktop/ direction=horizontal size=40`| Open a new toggle term session |
-|`CTRL + \`| Open lunarvims floating terminal |
+| Command                                                   | Action                           |
+| :-------------------------------------------------------- | :------------------------------- |
+| `:ToggleTerm dir=~/Desktop/ direction=horizontal size=40` | Open a new toggle term session   |
+| `CTRL + \`                                                | Open lunarvims floating terminal |
 
 Direnctions are: horizonzal, vertical, float, tab
 
@@ -56,10 +56,9 @@ Direnctions are: horizonzal, vertical, float, tab
 | `<leader>lq` | Open LSP issues (eg. Typescript errors) |     |
 | `<leader>Lc` | Open lunarvim config                    |     |
 
-
 ## Own Keymaps
 
 | Command    | Action                                                    |
-|:---------- |:--------------------------------------------------------- |
+| :--------- | :-------------------------------------------------------- |
 | `CTRL + 0` | `:ToggleTerm direction tab` opens a terminal in a new tab |
 |            |                                                           |

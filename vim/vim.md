@@ -129,6 +129,8 @@ a + object    Outer text object
 | `di(`                  | delete all content within (). Deletes from ("Hello world") <- "Hello world" |
 | `da(`                  | delete all content with (). Deltes from ("Hello world") <- ("Hello world")  |
 | `daw`                  | delete the word under the cursor                                            |
+| `dat`                  | delete the html tag with all its content under the cursor                   |
+| `dit`                  | delete html tag inner content under the cursor                              |
 
 Below is a list of common objects
 
@@ -169,16 +171,16 @@ t         XML tags e.g. HTML
 
 Beware. If you want to use capturing groups you need to escape the parenthesis like this`\(\)` also the result of the matching group can be accessed using `\1` (not `$1` what you might be used to from regular expressions).
 
-| Command         | Action                                          |
-| --------------- | ----------------------------------------------- |
-| `:%s/foo/bar/g` | Change each 'foo' to 'bar' in all the lines.    |
-| `:%s/\(foo\)/\1bar/g`  | Change each 'foo' to 'foobar' in all line using matching groups. |
-| `:s/foo/bar/g`  | Change each 'foo' to 'bar' in the current line. |
-| `/`             | search                                          |
-| `n`             | move after search forward                       |
-| `N`             | move after search backward                      |
-| `*`             | search word under the cursor forward            |
-| `#`             | search word under the cursor backward           |
+| Command               | Action                                                           |
+| --------------------- | ---------------------------------------------------------------- |
+| `:%s/foo/bar/g`       | Change each 'foo' to 'bar' in all the lines.                     |
+| `:%s/\(foo\)/\1bar/g` | Change each 'foo' to 'foobar' in all line using matching groups. |
+| `:s/foo/bar/g`        | Change each 'foo' to 'bar' in the current line.                  |
+| `/`                   | search                                                           |
+| `n`                   | move after search forward                                        |
+| `N`                   | move after search backward                                       |
+| `*`                   | search word under the cursor forward                             |
+| `#`                   | search word under the cursor backward                            |
 
 ## Replace all of current word under cursor
 
