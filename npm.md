@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 # NPM
 
 | Command                 | Result                              |

@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 ## Notation
 
 ```plain

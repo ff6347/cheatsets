@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 | Key            | Function                    |
 | -------------- | --------------------------- |
 | ↑, k, ^P       | Previous entry              |

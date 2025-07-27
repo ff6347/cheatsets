@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 # apt-get
 
 ## Upgrade

@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 # find
 
 | Command                                              | Result                                                 |

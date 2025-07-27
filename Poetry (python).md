@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 Generate pyrightconfig.json for use in lunarvim
 
 ```shell

@@ -1,3 +1,8 @@
+---
+tags:
+  - cheatsets
+---
+
 ## Modules
 
 | Command       | Result                    |

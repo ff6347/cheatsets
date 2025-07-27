@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 ## Notes
 
 - You dont need () to call a method e.g. `Cards.hello` is the same as `Cards.hello()`

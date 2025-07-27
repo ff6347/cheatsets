@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 | Command          | Action            |
 | :--------------- | :---------------- |
 | `CTRL + ALT + F` | Search Directory  |

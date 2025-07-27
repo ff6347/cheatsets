@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 | Command                             | Action                                        |
 | :---------------------------------- | :-------------------------------------------- |
 | `mix phx.new NAME_OF_APP --no-ecto` | Creates a new project without database (ecto) |

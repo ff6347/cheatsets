@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 Load .env files via direnv
 
 ```bash

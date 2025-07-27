@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 # tmux
 
 Original mapping is to ^ + b but I changed that

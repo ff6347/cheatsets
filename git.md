@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 ## Reset Restore
 
 | Command                         | Result                              |

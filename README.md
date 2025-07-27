@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 # Cheatsets
 
 A collection of cheatsets I like to keep on my desktop. These are commands I use on a not daily basis. To not have to browse through my shell history over and over again, I worte them down.

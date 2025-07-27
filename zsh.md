@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 | Command | Action                |
 | :------ | :-------------------- |
 | CTRL+a  | move to start of line |

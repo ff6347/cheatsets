@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 # SCP
 
 | Command                                     | Result                    |

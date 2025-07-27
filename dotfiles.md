@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 To manage dotfiles in a git repo we can use many managers.
 Currently I use [`chezmoi`](https://www.chezmoi.io/).
 

@@ -1,3 +1,7 @@
+---
+tags:
+  - cheatsets
+---
 ## Network bans
 
 How to list the banned IPs:
